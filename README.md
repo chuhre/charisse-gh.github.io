@@ -1,2 +1,2 @@
-# charisse-gh.github.io
+# charisse.github.io
 ICA2 Peach Riot
