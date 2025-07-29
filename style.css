@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'TrueLies';
+    src: url('../webdev_prac11_02_charisse/fonts/TrueLies/TrueLies.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CATHSGBR';
+    src: url('../webdev_prac11_02_charisse/fonts/CATHSGBR/CATHSGBR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JOURNAL';
+    src: url('../webdev_prac11_02_charisse/fonts/JOURNAL/JOURNAL.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'angelina';
+    src: url('../webdev_prac11_02_charisse/fonts/angelina/angelina.woff') format('woff');
+}
+
+
+h1 {
+    font-family: 'TrueLies', sans-serif;
+}
+
+
+
+
+
+.page {
+    width: 80vw;
+    height: auto;
+    padding: 5px;
+    border: 1px solid brown;
+}
+
+nav ul li {
+    display: inline;
+}
+
+#page1 {
+    background: lightgreen;
+}
+
+#page2 {
+    background: lightcoral;
+}
+
+#page3 {
+    background: lightblue;
+}
+
+
+
+
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+
+
+
+/*CSS for responsive menu*/
+#hamIcon {
+    display: none;
+}
+
+@media (max-width:800px) {
+
+    /*make a menu items vertical*/
+    nav ul li {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    #hamIcon {
+        display: block;
+    }
+
+    /*hide the menu item list*/
+    nav ul {
+        display: none;
+    }
+
+    .gameSect {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ballcontainer {
+        position: relative;
+        width: 95vw;
+        max-width: 400px;
+        border: 2px solid #333;
+        background-color: #f9f9f9;
+        margin: 20px 0;
+    }
+}
+
+/*to unhide menu items*/
+.menuShow {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.GridLine {
+    background-image: url(images/grid\ line\ bg.jpg);
+}
+
+/* === PAGE 1 === */
+
+/* Character Intros */
+article#GigiIntro {
+    font-family: 'CATHSGBR';
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+article#FrankieIntro {
+    font-family: 'JOURNAL';
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+article#PoppyIntro {
+    font-family: 'angelina';
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Game */
+#ballcontainer {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 2px solid #333;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+#ball {
+    background: cyan;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button {
+    /* background: #3498db;
+    color: white; */
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: gray;
+}
+
+
+
+
+/* === CARD GAME === */
+/* body {
+    background: url("./pokemon-bg.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+} */
+
+#board {
+    height: 532px;
+    width: 475px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border: 10px solid lightgrey;
+}
+
+
+
+.card {
+    height: 128px;
+    width: 90px;
+    margin: 2.5px;
+
+    background-image: url('images/peachriotSprite.jpg');
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+
+/* Card back - shown by default */
+.card-back {
+    background-image: url('images/peachriotCardBack.png');
+    background-size: cover; /* This will scale the image to cover the entire card */
+    background-position: center; /* This will center the image */
+
+}
+
+/* Individual card positions - adjust these based on your sprite layout */
+.card-poppy-baddie-on-bass {
+    background-position: -50px -88px;
+    
+}
+
+.card-gigi-lil-lead {
+    background-position: -310px -95px;
+    
+}
+
+.card-frankie-sick-beats {
+    background-position: -550px -95px;
+    
+}
+
+.card-poppy-business {
+    background-position: -60px -415px;
+    
+}
+
+.card-gigi-brain-stormer {
+    background-position: -320px -431px;
+    
+}
+
+.card-frankie-the-boss {
+    background-position: -575px -415px;
+    
+}
+
+.card-poppy-cutie {
+    background-position: -70px -744px;
+
+}
+
+.card-gigi-pop-star {
+    background-position: -315px -750px;
+    
+}
+
+.card-frankie-diva {
+    background-position: -570px -751px;
+
+}
+
+.card-gigi-singer {
+    background-position: -340px -1087px;
+   
+}

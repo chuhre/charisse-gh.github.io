@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'JOURNAL';
+	src: local('JOURNAL'), url('./JOURNAL.woff') format('woff');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_16823">Text with this font applied</p> */
+.fontsforweb_fontid_16823 {
+	font-family: 'JOURNAL' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
