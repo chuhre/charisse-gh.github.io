@@ -1,26 +1,34 @@
 @font-face {
     font-family: 'TrueLies';
-    src: url('../webdev_prac11_02_charisse/fonts/TrueLies/TrueLies.woff') format('woff');
+    src: url('../lab02_charisse_250846X_A2/fonts/TrueLies/TrueLies.woff') format('woff');
 }
 
 @font-face {
     font-family: 'CATHSGBR';
-    src: url('../webdev_prac11_02_charisse/fonts/CATHSGBR/CATHSGBR.woff') format('woff');
+    src: url('../lab02_charisse_250846X_A2/fonts/CATHSGBR/CATHSGBR.woff') format('woff');
 }
 
 @font-face {
     font-family: 'JOURNAL';
-    src: url('../webdev_prac11_02_charisse/fonts/JOURNAL/JOURNAL.woff') format('woff');
+    src: url('../lab02_charisse_250846X_A2/fonts/JOURNAL/JOURNAL.woff') format('woff');
 }
 
 @font-face {
     font-family: 'angelina';
-    src: url('../webdev_prac11_02_charisse/fonts/angelina/angelina.woff') format('woff');
+    src: url('../lab02_charisse_250846X_A2/fonts/angelina/angelina.woff') format('woff');
 }
 
 
 h1 {
     font-family: 'TrueLies', sans-serif;
+    /* color:#fb6f92; */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0E6EF;
+
 }
 
 
@@ -30,7 +38,12 @@ h1 {
 .page {
     width: 80vw;
     height: auto;
-    padding: 5px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     border: 1px solid brown;
 }
 
@@ -39,26 +52,25 @@ nav ul li {
 }
 
 #page1 {
-    background: lightgreen;
+    background: #f4f1de;
+
+    padding: 1rem;
 }
 
 #page2 {
-    background: lightcoral;
+    background: #ffe5ec;
+
+    padding: 1rem;
 }
 
 #page3 {
-    background: lightblue;
+    background: #ffe5ec;
+
+    padding: 1rem;
 }
 
 
 
-
-
-.responsive-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
-}
 
 
 
@@ -68,16 +80,20 @@ nav ul li {
     display: none;
 }
 
+
+/* Mobile layout (max-width:800px) */
 @media (max-width:800px) {
 
     /*make a menu items vertical*/
     nav ul li {
         display: block;
+        margin: 5px 0;
     }
 
     /* unhide menu icon */
     #hamIcon {
         display: block;
+        margin: 10px 0;
     }
 
     /*hide the menu item list*/
@@ -85,20 +101,69 @@ nav ul li {
         display: none;
     }
 
-    .gameSect {
+    .imageblock {
         display: flex;
         flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
     }
 
-    #ballcontainer {
-        position: relative;
-        width: 95vw;
-        max-width: 400px;
-        border: 2px solid #333;
-        background-color: #f9f9f9;
-        margin: 20px 0;
+    #GigiIntro {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+
     }
+
+    #FrankieIntro {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    #PoppyIntro {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+
+
+
+    #board {
+        width: 95%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .card {
+        width: calc(20% - 5px);
+        height: 80px;
+        margin: 2px;
+    }
+
+    .game-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stats {
+        gap: 15px;
+    }
+
+
 }
+
 
 /*to unhide menu items*/
 .menuShow {
@@ -109,11 +174,114 @@ nav ul li {
 
 
 
+/* Grid */
+.grid-container {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 3fr auto;
+
+    align-items: center;
+
+}
+
+.gridheader {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+.gridnav {
+    grid-row: 3/3;
+    grid-column: 1/4;
+}
+
+.gridmain {
+    grid-row: 4/5;
+    grid-column: 1/4;
+
+    align-items: center;
+}
+
+
+.gridfooter {
+    grid-row: 6/6;
+    grid-column: 1/4;
+}
 
 
 
 
 
+
+/* general use */
+.content-container {
+
+    width: 49%;
+    padding: 4px;
+    margin-bottom: 15px;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* .serieslist {
+    display: flex;
+    flex-direction: column;
+
+}  */
+
+
+.characontent {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.imageblock {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* Video */
+.vidcontainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    max-width: 800px;
+    margin: 0 auto;
+
+
+    padding-top: 42.85%;
+}
+
+/* Responsive videos */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Responsive Images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
 
 
 
@@ -121,94 +289,72 @@ nav ul li {
 
 .GridLine {
     background-image: url(images/grid\ line\ bg.jpg);
+
+    padding: 15px;
 }
+
 
 /* === PAGE 1 === */
 
 /* Character Intros */
 article#GigiIntro {
     font-family: 'CATHSGBR';
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    padding: 5px;
+    margin: 10px;
 }
 
 
 article#FrankieIntro {
     font-family: 'JOURNAL';
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    padding: 5px;
+    margin: 10px;
 }
 
 
 article#PoppyIntro {
     font-family: 'angelina';
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Game */
-#ballcontainer {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    border: 2px solid #333;
-    background-color: #f9f9f9;
-    margin: 20px 0;
-}
-
-#ball {
-    background: cyan;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 
-    font-size: 15px;
-    font-weight: bold;
+    padding: 5px;
+    margin: 15px;
 }
 
-button {
-    /* background: #3498db;
-    color: white; */
-    padding: 8px 16px;
-    margin: 5px;
-    font-size: 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-button:hover {
-    background: gray;
-}
+
+
+
+
+
 
 
 
 
 /* === CARD GAME === */
-/* body {
-    background: url("./pokemon-bg.jpg");
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-} */
+section#Minigame {
+    margin: 20px;
+}
 
 #board {
     height: 532px;
@@ -218,7 +364,21 @@ button:hover {
     flex-wrap: wrap;
     background-color: whitesmoke;
     border: 10px solid lightgrey;
+    position: relative;
 }
+
+
+#startBtn, #resetBtn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
 
 
 
@@ -226,69 +386,105 @@ button:hover {
     height: 128px;
     width: 90px;
     margin: 2.5px;
-
     background-image: url('images/peachriotSprite.jpg');
     background-repeat: no-repeat;
-
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Transition Hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px black;
+}
+
+/* Animation successful match */
+@keyframes matchSuccess {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(5deg);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.card.matched {
+    animation: matchSuccess 0.5s ease-in-out;
+    box-shadow: 0 0 20px greenyellow;
 }
 
 
 /* Card back - shown by default */
 .card-back {
     background-image: url('images/peachriotCardBack.png');
-    background-size: cover; /* This will scale the image to cover the entire card */
-    background-position: center; /* This will center the image */
-
+    background-size: cover;
+    background-position: center;
 }
 
-/* Individual card positions - adjust these based on your sprite layout */
+
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-right: 10px;
+}
+
+form select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+form button {
+    padding: 5px 10px;
+}
+
+
+
+/* CSS SPRITES */
 .card-poppy-baddie-on-bass {
     background-position: -50px -88px;
-    
 }
 
 .card-gigi-lil-lead {
     background-position: -310px -95px;
-    
 }
 
 .card-frankie-sick-beats {
     background-position: -550px -95px;
-    
 }
 
 .card-poppy-business {
     background-position: -60px -415px;
-    
 }
 
 .card-gigi-brain-stormer {
     background-position: -320px -431px;
-    
 }
 
 .card-frankie-the-boss {
     background-position: -575px -415px;
-    
 }
 
 .card-poppy-cutie {
     background-position: -70px -744px;
-
 }
 
 .card-gigi-pop-star {
     background-position: -315px -750px;
-    
 }
 
 .card-frankie-diva {
     background-position: -570px -751px;
-
 }
 
 .card-gigi-singer {
     background-position: -340px -1087px;
-   
 }
