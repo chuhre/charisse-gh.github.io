@@ -290,11 +290,15 @@ function update() {
         matches += 1;
         document.getElementById("matches").innerText = matches;
 
-        // Check for win
+       // Check for win
         if (matches === 10) {
             gameStarted = false;
             if (gameTimer) clearInterval(gameTimer);
-            setTimeout(() => alert("You Win!"), 500);
+
+            // Show win message 
+            setTimeout(function () {
+                alert("You Win!");
+            }, 500);
         }
     }
 
@@ -302,19 +306,32 @@ function update() {
     card2Selected = null;
 }
 
+
 // === TIMER FUNCTIONS ===
+// This function starts the countdown timer for the game
 function startTimer() {
-    gameTimer = setInterval(() => {
+    
+    // setInterval repeatedly runs the function inside every 1 sec
+    gameTimer = setInterval(function () {
+        
+        // Decrease the time left by 1 second
         timeLeft--;
+        // Update text on the page to show the new time left
         document.getElementById('timer').textContent = timeLeft;
 
+        // Check if time has run out
         if (timeLeft <= 0) {
+
             clearInterval(gameTimer);
             gameStarted = false;
+
+            // alert message game is over
             alert("Time's Up! You got " + matches + "/10 matches");
         }
+
     }, 1000);
 }
+
 
 function resetGame() {
     // Clear timer
