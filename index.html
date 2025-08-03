@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<body>
-    <header>
+
+<body class="grid-container">
+    <header class="gridheader">
         <h1>Peach Riot</h1>
     </header>
 
-    <nav> <!--menu system-->
+    <!--menu system-->
+    <nav class="gridnav">
         <button id="hamIcon">Open Menu</button>
         <ul>
             <li><button id="page1btn">Introduction to Peach Riot</button></li>
@@ -27,7 +29,8 @@
 
 
 
-    <main id="pagecontainer">
+
+    <main id="pagecontainer" class="gridmain">
         <section class="page" id="page1">
             <h2>Introduction to Peach Riot</h2>
             <h3>What is Peach Riot?</h3>
@@ -36,31 +39,38 @@
                 band which is formed by 3 memebers - Gigi, Frankie, and Poppy.
                 They release music that you can listen to on Spotify, Youtube and Apple Music.</p>
 
-
+            <!-- CHARACTERS -->
             <article class="GridLine">
                 <h2>Character Introduction</h2>
 
                 <article id="GigiIntro">
                     <h3>Gigi</h3>
-                    <img src="images/gigiintro.jpg" class="responsive-img">
-                    <p>Lead vocalist + Guitarist</p>
-                    <p>Zodiac Sign: Aries</p>
-                    <p>Likes</p>
-                    <ul>
-                        <li>Attention</li>
-                        <li>Sour candy</li>
-                        <li>Parties</li>
-                        <li>Guitars</li>
-                        <li>Horror Movies</li>
-                    </ul>
 
-                    <p>Hates</p>
-                    <ul>
-                        <li>School</li>
-                        <li>Bossy People</li>
-                        <li>Being bored</li>
-                        <li>Vegetables</li>
-                    </ul>
+                    <div class="imageblock">
+                        <img src="images/gigiintro.jpg" class="responsive-img">
+                    </div>
+
+                    <div class="characontent">
+                        <p>Lead vocalist + Guitarist</p>
+                        <p>Zodiac Sign: Aries</p>
+                        <p>Likes</p>
+                        <ul>
+                            <li>Attention</li>
+                            <li>Sour candy</li>
+                            <li>Parties</li>
+                            <li>Guitars</li>
+                            <li>Horror Movies</li>
+                        </ul>
+
+                        <p>Hates</p>
+                        <ul>
+                            <li>School</li>
+                            <li>Bossy People</li>
+                            <li>Being bored</li>
+                            <li>Vegetables</li>
+                        </ul>
+                    </div>
+
                 </article>
             </article>
 
@@ -68,85 +78,95 @@
             <article class="GridLine">
                 <article id="FrankieIntro">
                     <h3>Frankie</h3>
-                    <img src="images/frankieintro.jpg" class="responsive-img">
-                    <p>Drummer</p>
-                    <p>Zodiac Sign: Taurus</p>
-                    <p>Likes</p>
-                    <ul>
-                        <li>Being Cozy</li>
-                        <li>Thrifting</li>
-                        <li>Fantasy</li>
-                        <li>Gaming</li>
-                        <li>Reading</li>
-                    </ul>
 
-                    <p>Hates</p>
-                    <ul>
-                        <li>Rude People</li>
-                        <li>Staying out late</li>
-                        <li>Vending Machines</li>
-                        <li>Answering the phone</li>
-                        <li>Fighting</li>
-                    </ul>
+                    <div class="imageblock">
+                        <img src="images/frankieintro.jpg" class="responsive-img">
+                    </div>
+
+                    <div class="contenthead">
+                        <p>Drummer</p>
+                        <p>Zodiac Sign: Taurus</p>
+                        <p>Likes</p>
+                        <ul>
+                            <li>Being Cozy</li>
+                            <li>Thrifting</li>
+                            <li>Fantasy</li>
+                            <li>Gaming</li>
+                            <li>Reading</li>
+                        </ul>
+
+                        <p>Hates</p>
+                        <ul>
+                            <li>Rude People</li>
+                            <li>Staying out late</li>
+                            <li>Vending Machines</li>
+                            <li>Answering the phone</li>
+                            <li>Fighting</li>
+                        </ul>
+                    </div>
+
                 </article>
             </article>
 
 
             <article class="GridLine">
+
                 <article id="PoppyIntro">
                     <h3>Poppy</h3>
-                    <img src="images/poppyintro.avif" class="responsive-img">
-                    <p>Bassist and Keyboardist</p>
-                    <p>Zodiac Sign: Cancer</p>
-                    <p>Likes</p>
-                    <ul>
-                        <li>Perfection</li>
-                        <li>Music Theory</li>
-                        <li>Sweets</li>
-                        <li>Organization</li>
-                        <li>Synths</li>
-                        <li>Coffee</li>
-                        <li>Looking Cute</li>
-                    </ul>
 
-                    <p>Hates</p>
-                    <ul>
-                        <li>Annoying Ppl</li>
-                        <li>Failing</li>
-                        <li>Stupidity</li>
-                        <li>Bad Hair Days</li>
-                        <li>Scary Movies</li>
-                        <li>Being Patronised</li>
-                    </ul>
+                    <div class="imageblock">
+                        <img src="images/poppyintro.avif" class="responsive-img">
+                    </div>
+
+                    <div class="contenthead">
+                        <p>Bassist and Keyboardist</p>
+                        <p>Zodiac Sign: Cancer</p>
+                        <p>Likes</p>
+                        <ul>
+                            <li>Perfection</li>
+                            <li>Music Theory</li>
+                            <li>Sweets</li>
+                            <li>Organization</li>
+                            <li>Synths</li>
+                            <li>Coffee</li>
+                            <li>Looking Cute</li>
+                        </ul>
+
+                        <p>Hates</p>
+                        <ul>
+                            <li>Annoying Ppl</li>
+                            <li>Failing</li>
+                            <li>Stupidity</li>
+                            <li>Bad Hair Days</li>
+                            <li>Scary Movies</li>
+                            <li>Being Patronised</li>
+                        </ul>
+                    </div>
                 </article>
             </article>
-
-            <!-- <div class="vidcontainer">
-                <iframe class="responsive-iframe"
-                    src=""></iframe>
-            </div> -->
-
 
         </section>
 
 
 
+
+        <!-- MORE INFO -->
         <section class="page" id="page2">
             <h2>History of Peach Riot</h2>
 
             <p>Peach Riot was created by Libby Frame.</p>
-            <p>Libby Frame is an artist based in Los Angeles. She majored in Illustration Design and minored in Film
-                Studies during her college years. Post-graduation, she embarked on a career as a freelance artist,
-                focusing on character design and conceptual art, often weaving storytelling into her creations.</p>
+            <p>During her academic years, she minored in film studies and majored in illustration design. She started
+                working as a freelance artist after graduating, specializing in conceptual art and character design and
+                frequently incorporating narrative into her works.</p>
 
             <img src="images/libbyframepic.png" class="responsive-img">
 
             <p>Joining POPMART in 2024, these characters have quickly become a fan favorite!
-
-                Peach Riot is inspired by the riot girl band movement and the whole grunge scene. Set in the 90s in the
-                Pacific Northwest, they are all American. They were also inspired by the anime FLCL that fought with
-                guitars. They are meant to evoke youth, fun, and music! They somehow are nostalgic but always modern at
-                the same time. A re-imagining of the best of both worlds.</p>
+                The grunge movement and the riot girl band movement served as inspiration for Peach Riot. They are all
+                American and take place in the Pacific Northwest in the 1990s. Additionally, they were influenced by the
+                anime Fooly Cooly (FLCL), which battled with guitars. They are supposed to evoke music, pleasure, and
+                youth! They manage to be both nostalgic and up to date at the same time. The finest aspects of both
+                worlds are reimagined.</p>
 
             <img src="images/peachriotfull.jpg" class="responsive-img">
 
@@ -154,82 +174,93 @@
 
 
 
+
+        <!-- THE DIFFERENT SERIES -->
         <section class="page" id="page3">
             <h2>The Different Series</h2>
 
-            <h3>Normal Series</h4>
-                <p>Peach Riot Rise Up</p>
-                <p>Peach Riot Punk Fairy</p>
-                <p>Lil Peach Riot: Loading!</p>
-                <p>Peach Riot Rush Hour</p>
+            <div class="content-container">
+                <h3>Normal Series</h3>
+                <div class="serieslist">
+                    <p>Peach Riot Rise Up</p>
+                    <p>Peach Riot Punk Fairy</p>
+                    <p>Lil Peach Riot: Loading!</p>
+                    <p>Peach Riot Rush Hour</p>
+                </div>
+            </div>
 
-                <h3>Speacial and Exclusive Series</h3>
-                <p>Bloody Valentine</p>
-                <p>Witchy Punk</p>
-                <p>Angels</p>
 
+            <div class="content-container">
+                <h3>Special and Exclusive Series</h3>
+                <div class="serieslist">
+                    <p>Bloody Valentine</p>
+                    <p>Witchy Punk</p>
+                    <p>Angels</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- UNBOXING VIDEO AND SHOWCASE -->
+            <div class="vidcontainer">
+                <iframe class="responsive-iframe"
+                    src="https://www.youtube.com/embed/XrQULbGJZFM?si=L0yUtd2JyNKra_GH"></iframe>
+            </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- MINI GAME: Memory Match Card -->
+        <section id="Minigame">
+
+            <!-- game mode selection -->
+            <form id="gameForm">
+                <label for="gameMode">Game Mode:</label>
+                <select id="gameMode" name="gameMode">
+                    <option value="classic">Classic</option>
+                    <option value="timed">Timed Challenge</option>
+                </select>
+
+                <!-- game start -->
+                <button type="submit" id="startBtn">Start Game</button>
+            </form>
+
+            <!-- game stats -->
+            <h2>Errors: <span id="errors">0</span></h2>
+            <h2>Matches: <span id="matches">0</span></h2>
+            <h2 id="timerDisplay" style="display: none;">Time: <span id="timer">60</span></h2>
+
+            <!-- game board -->
+            <div id="board"></div>
+
+            <!-- game reset -->
+            <button id="resetBtn">Reset</button>
+        </section>
+
     </main>
 
 
 
-    <!-- <h2>Are you ready to Rock?</h2>
-    <section class="gameSect">
-        <div id="ballcontainer">
-            <div id="ball">0,0</div>
-        </div>
-        <button id="leftBtn">Left</button>
-        <button id="rightBtn">Right</button>
-        <button id="upBtn">Up</button>
-        <button id="downBtn">Down</button>
-        <button id="resetBtn">Reset</button>
-    </section> -->
-
-
-    <section>
-        <h2>Errors: <span id="errors">0</span></h2>
-        <div id="board">
-            <!-- <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg">
-            <img id="0-0" class="card" src="water.jpg"> -->
-
-            
-        </div>
-    </section>
 
 
 
 
 
-
-
-
-
-
-    <footer>
+    <footer class="gridfooter">
         <p>Contact</p>
         <a href="https://www.instagram.com/peachriotofficial/?hl=en" target="_blank"><img
-                src="images/instagram icon.png" height="20"></a>
+                src="images/instagram icon.png" height="25"></a>
+        <a href="https://open.spotify.com/artist/6x4fWXlFHJhySjhtO7cBIh?si=Kch11UmzTSyJjUlhUyATgw" target="_blank"><img
+                src="images/spotify icon.png" height="30"></a>
     </footer>
 
 
