@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'angelina';
-    src: url('../lab02_charisse_250846X_A2/fonts/angelina/angelina.woff') format('woff');
+    src: url('../fonts/angelina/angelina.woff') format('woff');
 }
 
 
@@ -535,3 +535,4 @@ form button {
     margin: 10px;
 
 }
+
