@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'TrueLies';
-    src: url('../fonts/TrueLies/TrueLies.woff') format('woff');
+    src: url('../webdevA2/fonts/TrueLies/TrueLies.woff') format('woff');
 }
 
 @font-face {
     font-family: 'CATHSGBR';
-    src: url('../fonts/CATHSGBR/CATHSGBR.woff') format('woff');
+    src: url('../webdevA2/fonts/CATHSGBR/CATHSGBR.woff') format('woff');
 }
 
 @font-face {
     font-family: 'JOURNAL';
-    src: url('../fonts/JOURNAL/JOURNAL.woff') format('woff');
+    src: url('../webdevA2/fonts/JOURNAL/JOURNAL.woff') format('woff');
 }
 
 @font-face {
     font-family: 'angelina';
-    src: url('../fonts/angelina/angelina.woff') format('woff');
+    src: url('../webdevA2/fonts/angelina/angelina.woff') format('woff');
 }
 
 
@@ -535,4 +535,5 @@ form button {
     margin: 10px;
 
 }
+
 
