@@ -20,8 +20,10 @@
 
 
 
+
 h1 {
     font-family: 'TrueLies', sans-serif;
+    margin-left: 15px;
 }
 
 
@@ -211,6 +213,8 @@ nav ul li {
 .gridfooter {
     grid-row: 6/6;
     grid-column: 1/4;
+
+    margin: 0 12px;
 }
 
 
@@ -489,7 +493,3 @@ form button {
 .card-gigi-singer {
     background-position: -340px -1087px;
 }
-
-
-
-
