@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'TrueLies';
-    src: url('../lab02_charisse_250846X_A2/fonts/TrueLies/TrueLies.woff') format('woff');
+    src: url('../fonts/TrueLies/TrueLies.woff') format('woff');
 }
 
 @font-face {
     font-family: 'CATHSGBR';
-    src: url('../lab02_charisse_250846X_A2/fonts/CATHSGBR/CATHSGBR.woff') format('woff');
+    src: url('../fonts/CATHSGBR/CATHSGBR.woff') format('woff');
 }
 
 @font-face {
     font-family: 'JOURNAL';
-    src: url('../lab02_charisse_250846X_A2/fonts/JOURNAL/JOURNAL.woff') format('woff');
+    src: url('../fonts/JOURNAL/JOURNAL.woff') format('woff');
 }
 
 @font-face {
@@ -533,4 +533,5 @@ form button {
     bottom: 0;
     right: 0;
     margin: 10px;
+
 }
